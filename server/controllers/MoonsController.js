@@ -1,6 +1,6 @@
 import express from 'express'
 import _moonsService from '../services/MoonsService.js'
-import MoonsService from '../services/MoonsService.js';
+
 
 export default class MoonController {
 
