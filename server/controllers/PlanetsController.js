@@ -18,7 +18,7 @@ export default class PlanetsController {
 
   async getPlanet(req, res, next) {
     try {
-      let planet = await _planetsService.findById(req.params.planetId).populate('stars moons')
+      let planet = await _planetsService.findById(req.params.planetId)
       res.send(planet)
     }
     catch (err) { next(err) }

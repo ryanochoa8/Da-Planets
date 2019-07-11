@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const connectionString = 'mongodb+srv://student:student@cluster0-wgdub.mongodb.net/test?retryWrites=true&w=majority'
+const connectionString = 'mongodb+srv://student:student@cluster0-wgdub.mongodb.net/Galaxy?retryWrites=true&w=majority'
 
 let connection = mongoose.connection
 

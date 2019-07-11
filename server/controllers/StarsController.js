@@ -18,7 +18,7 @@ export default class StarsController {
 
   async getStar(req, res, next) {
     try {
-      let star = await _starsService.findById(req.params.starId).populate('galaxy planets')
+      let star = await _starsService.findById(req.params.starId)
       res.send(star)
     }
     catch (err) { next(err) }
